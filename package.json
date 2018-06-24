@@ -1,6 +1,6 @@
 {
   "name": "generator-gmd",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A yeoman generator to scaffold a simple functionnal golang app with makefile and Dockerfile",
   "files": [
     "app"
