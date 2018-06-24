@@ -1,0 +1,12 @@
+FROM golang:1.10.3 AS builder
+
+# Copy the code from the host and compile it
+RUN mkdir -p /<%= appName %>
+WORKDIR /<%= appName %>
+COPY . ./
+RUN make
+RUN cp ./bin/* /app
+
+FROM scratch
+COPY --from=builder /app ./
+ENTRYPOINT ["./app"]
