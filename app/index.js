@@ -36,13 +36,9 @@ module.exports = class extends Generator {
 
     writing() {
         console.log('Generating tree folders');
-        let pkgDir = this.destinationPath('pkg');
         let srcDir = this.destinationPath(this.appName);
-        let binDir = this.destinationPath('bin');
 
-        mkdir.sync(pkgDir);
         mkdir.sync(srcDir);
-        mkdir.sync(binDir);
 
         this.fs.copy(
             this.templatePath('_gitignore'),
