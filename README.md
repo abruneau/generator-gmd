@@ -1,4 +1,3 @@
-<a href="https://codeclimate.com/github/abruneau/generator-gmd/maintainability"><img src="https://api.codeclimate.com/v1/badges/b73387d211ce4f09286e/maintainability" /></a>
 <p align="center" style="margin-bottom: 20px; width: 100px; margin: auto">
 <img src="https://golang.org/doc/gopher/frontpage.png"/>
 </p>
